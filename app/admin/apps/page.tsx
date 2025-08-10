@@ -32,7 +32,7 @@ import { addSpacesToCamelCase } from "@/lib/utils";
 
 export default function AdminAppsPage() {
   const [page] = useState(1);
-  const [limit] = useState(10);
+  const [limit] = useState(1000);
   const { data, isLoading } = useAdminApps({ page, limit });
   const { mutate: updateApp } = useUpdateApp();
   const { toast } = useToast();
