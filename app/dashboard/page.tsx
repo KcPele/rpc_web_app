@@ -64,18 +64,18 @@ export default function DashboardPage() {
               variant="expenses"
             />
             <StatCard
-              title="Total Requests"
-              value={stats?.totalRequests.toLocaleString() || 0}
-              icon={BarChart3}
-              description="All time requests"
-              variant="goals"
-            />
-            <StatCard
               title="Today's Requests"
               value={stats?.todaysRequests.toLocaleString() || 0}
               icon={Clock}
               description="Requests today"
               variant="weekly-stats"
+            />
+            <StatCard
+              title="Total Requests"
+              value={stats?.totalRequests.toLocaleString() || 0}
+              icon={BarChart3}
+              description="All time requests"
+              variant="goals"
             />
           </>
         )}
